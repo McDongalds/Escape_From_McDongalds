@@ -2,4 +2,4 @@ January 13: Created Github repository for sharing files
 January 14: Created Unity project and connected it to GitHub repo. 
             Jackson Created the player movement script and the camera movement script
             Jason Created the skybox
-January 15: 
+January 15: Deleted original camera movement script, started using Cinemachine for a rotational camera, re-wrote player movement script.
