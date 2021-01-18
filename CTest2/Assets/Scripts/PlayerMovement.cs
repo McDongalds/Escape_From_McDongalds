@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.8f;
     public float ySpeed = 0f;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        transform.Translate(playerSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, playerSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(h, 0f, v).normalized;
@@ -41,7 +44,5 @@ public class PlayerMovement : MonoBehaviour
             Vector3 vGrav = new Vector3(0f, ySpeed, 0f);
             controller.Move(vGrav * Time.deltaTime);
         }
-
-
     }
 }
