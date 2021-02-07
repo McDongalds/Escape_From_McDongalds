@@ -1,7 +1,10 @@
 January 13: Created Github repository for sharing files
 January 14: Created Unity project and connected it to GitHub repo. 
-            Jackson Created the player movement script and the camera movement script
-            Jason Created the skybox
-January 15: Deleted original camera movement script, started using Cinemachine for a rotational camera, re-wrote player movement script.
-January 17: Created the first tube segment, and added appropriate box collider.
-January 19: Created more tube segments and some custom materials.
+            Jackson created the player movement script and the camera movement script
+            Jason created the skybox
+January 15: Deleted original camera movement script, started using Cinemachine for a rotational camera, re-wrote player movement script
+January 17: Created the first tube segment, and added appropriate box collider
+January 19: Created more tube segments and some custom materials
+January 25: Created baby john model in blender
+January 31: Created animation skeleton for baby john
+February 6: Finished designing map layout
