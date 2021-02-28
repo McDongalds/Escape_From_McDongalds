@@ -8,3 +8,4 @@ January 19: Created more tube segments and some custom materials
 January 25: Created baby john model in blender
 January 31: Created animation skeleton for baby john
 February 6: Finished designing map layout
+February 21: Finished all blender assets (rooms, connectors, ladder, slide)
