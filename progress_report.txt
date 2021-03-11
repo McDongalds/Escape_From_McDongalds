@@ -9,3 +9,4 @@ January 25: Created baby john model in blender
 January 31: Created animation skeleton for baby john
 February 6: Finished designing map layout
 February 21: Finished all blender assets (rooms, connectors, ladder, slide)
+March 10: Created model for babyjohn. Rigged model for babyjohn. Animated model for babyjohn. Added glassdome to blender assests. Created blender assets for nuggets, fries, and toy.
