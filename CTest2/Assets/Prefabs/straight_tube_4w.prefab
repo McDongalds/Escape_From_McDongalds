@@ -88,6 +88,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4964666232049689256}
+  - component: {fileID: 6153157716455719094}
+  - component: {fileID: 163134814420200938}
+  - component: {fileID: 3374041017981009073}
   m_Layer: 0
   m_Name: straight_tube_4w
   m_TagString: Untagged
@@ -111,6 +114,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6153157716455719094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741483757593081874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 39.563507, y: 2.8587074, z: 13.406097}
+  m_Center: {x: -10.7265625, y: 19.864813, z: 0.27183533}
+--- !u!65 &163134814420200938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741483757593081874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.039993, y: 14.281582, z: 3.5239868}
+  m_Center: {x: -10.844414, y: 28.332636, z: -8.202362}
+--- !u!65 &3374041017981009073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741483757593081874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.039993, y: 14.330612, z: 3.7601929}
+  m_Center: {x: -10.844414, y: 28.436035, z: 8.872726}
 --- !u!1 &6709283994741430329
 GameObject:
   m_ObjectHideFlags: 0
