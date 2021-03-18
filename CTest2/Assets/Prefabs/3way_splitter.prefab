@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3908935283717041036}
   - component: {fileID: 112740054123602985}
   - component: {fileID: 2770979526550622435}
+  - component: {fileID: 7922453728035167708}
   m_Layer: 0
   m_Name: 3way_splitter
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 53ac5ba83383de847bb891e7e1231634, type: 3}
+  - {fileID: 2100000, guid: 2db5c8c54decf52479d57b70d55fb94c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7922453728035167708
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4428308655271686454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 53ac5ba83383de847bb891e7e1231634, type: 3}

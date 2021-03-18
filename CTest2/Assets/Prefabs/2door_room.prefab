@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4010694385885405269}
   - component: {fileID: 1973477801553904}
   - component: {fileID: 2874411020129246010}
+  - component: {fileID: 5675761091106863114}
   m_Layer: 0
   m_Name: 2door_room
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 2812bc6fd185f4e4f843a9e9be7e61ba, type: 3}
+  - {fileID: 2100000, guid: 1f2ab0690a95eda4c83d25868a7ef5c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5675761091106863114
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387361353085106927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 2812bc6fd185f4e4f843a9e9be7e61ba, type: 3}
