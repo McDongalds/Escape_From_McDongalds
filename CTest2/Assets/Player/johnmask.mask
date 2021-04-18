@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: johnmask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/Root
+    m_Weight: 1
+  - m_Path: Armature/Root/Back
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftarm
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftarm/leftforearm
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftarm/leftforearm/leftforearm_end
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftleg
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftleg/leftshin
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/leftleg/leftshin/leftshin_end
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/neck
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/neck/neck_end
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightarm
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightarm/rightforearm
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightarm/rightforearm/rightforearm_end
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightleg
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightleg/rightshin
+    m_Weight: 1
+  - m_Path: Armature/Root/Back/rightleg/rightshin/rightshin_end
+    m_Weight: 1
+  - m_Path: Armature/Root/leftelbowIK
+    m_Weight: 1
+  - m_Path: Armature/Root/leftelbowIK/leftelbowIK_end
+    m_Weight: 1
+  - m_Path: Armature/Root/leftfootIK
+    m_Weight: 1
+  - m_Path: Armature/Root/leftfootIK/leftfoot
+    m_Weight: 1
+  - m_Path: Armature/Root/leftfootIK/leftfoot/leftfoot_end
+    m_Weight: 1
+  - m_Path: Armature/Root/lefthandIK
+    m_Weight: 1
+  - m_Path: Armature/Root/lefthandIK/lefthand
+    m_Weight: 1
+  - m_Path: Armature/Root/lefthandIK/lefthand/lefthand_end
+    m_Weight: 1
+  - m_Path: Armature/Root/leftkneeIK
+    m_Weight: 1
+  - m_Path: Armature/Root/leftkneeIK/leftkneeIK_end
+    m_Weight: 1
+  - m_Path: Armature/Root/rightelbowIK
+    m_Weight: 1
+  - m_Path: Armature/Root/rightelbowIK/rightelbowIK_end
+    m_Weight: 1
+  - m_Path: Armature/Root/rightfootIK
+    m_Weight: 1
+  - m_Path: Armature/Root/rightfootIK/rightfoot
+    m_Weight: 1
+  - m_Path: Armature/Root/rightfootIK/rightfoot/rightfoot_end
+    m_Weight: 1
+  - m_Path: Armature/Root/righthandIK
+    m_Weight: 1
+  - m_Path: Armature/Root/righthandIK/righthand
+    m_Weight: 1
+  - m_Path: Armature/Root/righthandIK/righthand/righthand_end
+    m_Weight: 1
+  - m_Path: Armature/Root/rightkneeIK
+    m_Weight: 1
+  - m_Path: Armature/Root/rightkneeIK/rightkneeIK_end
+    m_Weight: 1
+  - m_Path: Cube
+    m_Weight: 1
