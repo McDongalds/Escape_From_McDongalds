@@ -6,16 +6,22 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer instance;
+
     public Text timerText;
     private bool timerEnabled;
     private float elapsedTime;
-    private TimeSpan timeLeft;
-    private TimeSpan startTime = TimeSpan.FromSeconds(300);
+    public TimeSpan timePlaying;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        timerText.text = "Time Left: 5:00.00";
+        timerText.text = "Time: 00:00.00";
         timerEnabled = false;
 
         //call BeginTimer() in a game controller script 
@@ -39,9 +45,8 @@ public class Timer : MonoBehaviour
     {
         while(timerEnabled){
             elapsedTime += Time.deltaTime;
-            //when timer goes negative, timer starts counting up. Use EndTimer()
-            timeLeft = startTime.Subtract(TimeSpan.FromSeconds(elapsedTime));
-            timerText.text = "Time Left: " + timeLeft.ToString("m':'ss'.'ff");
+            timePlaying = TimeSpan.FromSeconds(elapsedTime);
+            timerText.text = "Time: " + timePlaying.ToString("m':'ss'.'ff");
 
             yield return null;
         }
