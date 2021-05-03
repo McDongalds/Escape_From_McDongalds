@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class EndTrigger : MonoBehaviour
 {
-    private Timer timerScript;
+    public Timer timerScript;
     public GameManager gameManager;
-
-    void Awake()
-    {
-        timerScript = GetComponent<Timer>();
-    }
 
     void OnTriggerEnter()
     {

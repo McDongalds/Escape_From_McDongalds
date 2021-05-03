@@ -6,21 +6,17 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private Timer timerScript;
+    public Timer timerScript;
     bool gameEnded = false; 
     public float restartDelay = 1f;
     public GameObject gameWonUI;
     public Text timeText;
 
-    void Awake()
-    {
-        timerScript = GetComponent<Timer>();
-    }
-
     public void GameWon()
     {
         gameWonUI.SetActive(true);
-        timeText.text = "Completion Time: " + timerScript.timePlaying.ToString("m':'ss'.'ff");
+        timerScript.EndTimer();
+        timeText.text = "Completion Time: " + timerScript.endTimeDisplay;
     }
     
     public void EndGame()

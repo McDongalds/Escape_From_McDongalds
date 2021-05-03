@@ -9,9 +9,11 @@ public class Timer : MonoBehaviour
     public static Timer instance;
 
     public Text timerText;
-    private bool timerEnabled;
+    public bool timerEnabled;
     private float elapsedTime;
     public TimeSpan timePlaying;
+    public float endTime;
+    public string endTimeDisplay;
 
     private void Awake()
     {
@@ -39,6 +41,7 @@ public class Timer : MonoBehaviour
     public void EndTimer()
     {
         timerEnabled = false;
+        endTimeDisplay = TimeSpan.FromSeconds(elapsedTime).ToString("m':'ss'.'ff");
     }
 
     private IEnumerator UpdateTimer()

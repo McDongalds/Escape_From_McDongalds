@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1148147974506464001}
   - component: {fileID: 1148147974506464029}
   - component: {fileID: 1148147974506464003}
+  - component: {fileID: 4188163001130355440}
   m_Layer: 0
   m_Name: PlayerReal
   m_TagString: Player
@@ -51,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148147974506464028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -133,6 +134,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 1148147974506464000}
   ladderHeight: 10
+--- !u!65 &4188163001130355440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148147974506464028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.51158, y: 40.00466, z: 11.260127}
+  m_Center: {x: 1.1253877, y: -0.93610317, z: 0.86029524}
 --- !u!1001 &5259779317477057961
 PrefabInstance:
   m_ObjectHideFlags: 0
