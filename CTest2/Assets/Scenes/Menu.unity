@@ -1321,16 +1321,16 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 5.08
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1806193821}
         m_MethodName: ChangeVolume
-        m_Mode: 4
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1090985170}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2025,6 +2025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bed73fcbfcb95348bb0e2ea67207714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volume: 0
 --- !u!82 &1806193822
 AudioSource:
   m_ObjectHideFlags: 0

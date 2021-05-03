@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     AudioSource audioSource;
+    public float volume;
     public void Awake()
     {
         
@@ -14,9 +16,9 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void ChangeVolume(float vol)
+    public void ChangeVolume(Slider slider)
     {
-        Debug.Log(vol);
+        Debug.Log(slider.value);
     }
 
     public void PlayGame()
