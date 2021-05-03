@@ -5,6 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    AudioSource audioSource;
+    public void Awake()
+    {
+        
+        audioSource.volume = .1f;
+        
+        
+    }
+
+    public void ChangeVolume(float vol)
+    {
+        Debug.Log(vol);
+    }
+
     public void PlayGame()
     {
         //loads the Scene with an index that is 1 greater than the current index
