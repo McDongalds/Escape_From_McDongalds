@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
 
-        transform.Translate(playerSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, playerSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+        //transform.Translate(playerSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, playerSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(h, 0f, v).normalized;
@@ -40,9 +40,11 @@ public class PlayerMovement : MonoBehaviour
             ySpeed = 0;
         if (!controller.isGrounded)
         {
+        
             ySpeed += gravity * Time.deltaTime;
             Vector3 vGrav = new Vector3(0f, ySpeed, 0f);
             controller.Move(vGrav * Time.deltaTime);
         }
+       
     }
 }

@@ -6,19 +6,16 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    AudioSource audioSource;
+    public AudioSource audioSource;
     public float volume;
     public void Awake()
     {
-        
-        audioSource.volume = .1f;
-        
-        
     }
 
     public void ChangeVolume(Slider slider)
     {
-        Debug.Log(slider.value);
+        volume = slider.value;
+        GlobalControl.Instance.Volume = volume;
     }
 
     public void PlayGame()
