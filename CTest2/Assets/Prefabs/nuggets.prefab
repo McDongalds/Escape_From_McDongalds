@@ -325,9 +325,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6283872943456459460}
+  - component: {fileID: 4001495291377275037}
   m_Layer: 0
   m_Name: nuggets
-  m_TagString: Untagged
+  m_TagString: Nuggets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,3 +351,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4001495291377275037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6665078454403809406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.773603, y: 2.1452684, z: 10.8785925}
+  m_Center: {x: -3.0365188, y: 0.57263386, z: -0.37735325}

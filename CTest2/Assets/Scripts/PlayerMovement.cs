@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+
     public CharacterController controller;
     public float playerSpeed;
     public float smoothTime;
@@ -16,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        instance = this;
     }
 
     // Update is called once per frame
@@ -46,5 +48,14 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(vGrav * Time.deltaTime);
         }
        
+    }
+    public void changeGrav(float newG)
+    {
+        gravity = newG;
+    }
+
+    public void changeYSpeed(float newS)
+    {
+        ySpeed = newS;
     }
 }

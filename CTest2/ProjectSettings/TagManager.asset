@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ladder
   - LadderTop
+  - Fries
+  - Nuggets
+  - Toy
   layers:
   - Default
   - TransparentFX

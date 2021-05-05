@@ -8,6 +8,7 @@ public class Ladder : MonoBehaviour
     public float ladderHeight = 10f;
     private bool onLadder;
     float cSpeed = 0;
+    public PlayerMovement playerReal;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,31 +17,35 @@ public class Ladder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Ladder")
+        if(other.gameObject.tag == "Ladder" && playerController.transform.position.y < 40f)
         {
-            onLadder = !onLadder;
+            onLadder = true;
+            Debug.Log(playerReal.gravity);
+            playerReal.changeGrav(0);
+            playerReal.changeYSpeed(0);
+
         }
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         if(other.gameObject.tag == "Ladder")
         {
-            onLadder = !onLadder;
+            onLadder = false;
+            playerReal.changeGrav(-9.8f);
+            playerReal.changeYSpeed(0);
         }
     }
+    
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (onLadder)
+        if (onLadder && playerController.transform.position.y < 58)
         {
-            
-            cSpeed += 10 + Time.deltaTime;
-            Vector3 climb = new Vector3(0f, cSpeed, 0f);
+            Vector3 climb = new Vector3(0f, 10f, 0f);
             playerController.Move(climb * Time.deltaTime);
         }
-        else
-            cSpeed = 0;
+
     }
 }
