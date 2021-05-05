@@ -6,7 +6,8 @@ public class PatrolAI : MonoBehaviour
 {   
     public Transform[] waypoints;
     public int speed;
-
+    public GameManager gameManager;
+    public GameObject youDied;
     private int waypointIndex;
     private float distance;
 
@@ -14,6 +15,15 @@ public class PatrolAI : MonoBehaviour
     {
         waypointIndex = 0;
         transform.LookAt(waypoints[waypointIndex].position);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(EnemyDeath());
+        }
     }
 
     void FixedUpdate()
@@ -24,6 +34,13 @@ public class PatrolAI : MonoBehaviour
             IncrementIndex();
         }
         Patrol();
+    }
+
+    private IEnumerator EnemyDeath()
+    {
+        youDied.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        gameManager.EndGame();
     }
 
     void Patrol()

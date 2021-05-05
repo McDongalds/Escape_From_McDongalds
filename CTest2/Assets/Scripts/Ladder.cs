@@ -7,7 +7,6 @@ public class Ladder : MonoBehaviour
     public CharacterController playerController;
     public float ladderHeight = 10f;
     private bool onLadder;
-    float cSpeed = 0;
     public PlayerMovement playerReal;
     // Start is called before the first frame update
     void Start()

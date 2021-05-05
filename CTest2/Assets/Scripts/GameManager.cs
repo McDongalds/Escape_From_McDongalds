@@ -11,12 +11,20 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 1f;
     public GameObject gameWonUI;
     public Text timeText;
+    
 
     public void GameWon()
     {
         gameWonUI.SetActive(true);
         timerScript.EndTimer();
         timeText.text = "Completion Time: " + timerScript.endTimeDisplay;
+        StartCoroutine(EndDelay());
+    }
+
+    private IEnumerator EndDelay()
+    {
+        yield return new WaitForSeconds(8.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
     
     public void EndGame()
@@ -24,7 +32,6 @@ public class GameManager : MonoBehaviour
         if(!gameEnded)
         {
             gameEnded = true;
-            Debug.Log("Game Over");
             Invoke("Restart", restartDelay);
         }
     }
