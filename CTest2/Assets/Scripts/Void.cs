@@ -7,6 +7,8 @@ public class Void : MonoBehaviour
 {
     public GameObject VoidCube;
     public GameManager gameManager;
+    public AudioSource voidNoise;
+    public AudioSource menuSong;
 
     void OnTriggerEnter()
     {
@@ -16,7 +18,9 @@ public class Void : MonoBehaviour
     
     private IEnumerator VoidPlayer()
     {
-        //play void audio
+        menuSong.mute = true;
+        voidNoise.volume = GlobalControl.Instance.Volume;
+        voidNoise.Play();
         yield return new WaitForSeconds(10);
         gameManager.EndGame();
     }
